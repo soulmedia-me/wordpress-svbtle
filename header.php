@@ -15,3 +15,4 @@
     		<h2 class="hide"><?php bloginfo( 'description' ); ?></h2>
 		<h3 class="date"><?php echo date("F d, Y"); ?></h3>
 	</header>
+	
