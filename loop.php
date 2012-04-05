@@ -1,4 +1,3 @@
-<?php /* Top post navigation */ ?>
 <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 <?php } ?>
 	<ul class="posts">	
@@ -17,10 +16,10 @@
 					<div class="circle">
 						<div class="filled">&nbsp;</div>
 					</div>
-					<p class="kcount">350</p>
+					<p class="kcount"><?php echo get_post_meta($post->ID, 'wp-svbtle-kudos', true); ?></p>
 					<p class="identifier">KUDOS</p>
 					<span class="extid hide"><?php the_ID(); ?></span>
-					<span class="permalink hide">proud-dad-of-one-generation</span>
+					<span class="permalink hide"><?php the_permalink(); ?></span>
 				</a>
 			</figure>
 			<h1><?php //echo get_the_category_list(', '); ?></h1>
