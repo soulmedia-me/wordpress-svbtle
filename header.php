@@ -2,8 +2,21 @@
 <html>
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<title><?php bloginfo('name'); ?><?php wp_title('|',true); ?></title>
-
+	<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
 	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+	<script type="text/javascript">
+		// ganalytics
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+ 		 var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-30642855-1']);
+  		_gaq.push(['_setDomainName', 'scav1.com']);
+  		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+	</script>
 	<meta property="og:type" content="website"/>
 	<meta property="og:url" content="http://scav1.com"/>
 	<meta property="og:type" content="website"/>
