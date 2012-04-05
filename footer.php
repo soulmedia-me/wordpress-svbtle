@@ -2,7 +2,10 @@
 <header id="simple" class="bigsite"> 
 	<h1><a href="/"><?php bloginfo( 'name' ); ?></a></h1>
 	<h2><?php bloginfo( 'description' ); ?></h2>
-<?php get_sidebar(); ?>
+	<ul id="user_info">
+		<?php wp_nav_menu(array('menu' => 'custom_menu')); ?>
+	</ul>
+<?php //get_sidebar(); ?>
 	<p class="networkify" style="color: #777">Original design by <a href="http://svbtle.com">Svbtle</a>.</p>
 	<figure id="logo_blog" class="">
 		<a href="/" style="background-image: url(http://scav1.com/wp-content/themes/obtvse/images/chain_link.png);">SCAVONE</a>
