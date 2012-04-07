@@ -61,7 +61,7 @@ nav ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0}
 
 img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle}
 
-svg:not(:root{overflow:hidden}
+svg:not(:root){overflow:hidden}
 
 figure{margin:0}
 
