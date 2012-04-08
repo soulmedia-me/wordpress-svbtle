@@ -2,8 +2,8 @@
 <html>
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<title><?php bloginfo('name'); ?><?php wp_title('|',true); ?></title>
-	<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
 	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+	<style type="text/css">.tk-freight-sans-pro{font-family:"freight-sans-pro",sans-serif;}.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-ff-meta-web-pro{font-family:"ff-meta-web-pro",sans-serif;}</style>
 	<script type="text/javascript">
 		// ganalytics
 		(function() {
