@@ -6,7 +6,7 @@
 		<article>
 			<h2>
 				<a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a>
-				<a href="http://scav1.com/?p=<?php the_ID(); ?>" class="anchor">⚓</a>
+				<a href="<?php echo home_url('/'); ?>?p=<?php the_ID(); ?>" class="anchor">⚓</a>
 			</h2>
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
 			

@@ -3,7 +3,6 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<title><?php bloginfo('name'); ?><?php wp_title('|',true); ?></title>
 	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-	<style type="text/css">.tk-freight-sans-pro{font-family:"freight-sans-pro",sans-serif;}.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-ff-meta-web-pro{font-family:"ff-meta-web-pro",sans-serif;}</style>
 	<script type="text/javascript">
 		// ganalytics
 		(function() {
@@ -18,11 +17,11 @@
 		_gaq.push(['_trackPageview']);
 	</script>
 	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="http://scav1.com"/>
+	<meta property="og:url" content="<?php echo home_url(); ?>"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:description" content="<?php bloginfo( 'description' ); ?>"/>
-	<meta property="og:image" content="http://cargo.dcurt.is/svbtle_logo.png" /> 
-	<link href="http://scav1.com/feed" rel="alternate" title="RSS" type="application/rss+xml" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/svbtle_logo.png" /> 
+	<link href="<?php bloginfo('rss2_url'); ?>" rel="alternate" title="<?php _e('RSS'); ?>" type="application/rss+xml" />
 	<meta name="Description" content="<?php bloginfo( 'description' ); ?>"/>
 	<?php add_action( 'wp_enqueue_scripts', 'main_css' );  ?>
 	<?php wp_head(); ?>

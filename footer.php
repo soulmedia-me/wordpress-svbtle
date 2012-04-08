@@ -8,7 +8,7 @@
 <?php //get_sidebar(); ?>
 	<p class="networkify" style="color: #777">Original design by <a href="http://svbtle.com">Svbtle</a>.</p>
 	<figure id="logo_blog">
-		<a href="/" style="background-image: url(http://scav1.com/wp-content/themes/obtvse/images/chain_link.png);">SCAVONE</a>
+		<a href="/" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/chain_link.png);"><?php bloginfo( 'name' ); ?></a>
 		<span class="dot_pulse"></span>
 	</figure>
 </header>
@@ -19,24 +19,24 @@
 	</a>
 </aside>
 <div class="identify">
-	<h3 style="background-image: url(http://scav1.com/wp-content/themes/obtvse/images/chain_link_large.png);">&nbsp;</h3>
+	<h3 style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/chain_link_large.png);">&nbsp;</h3>
 	<p class="name"><?php bloginfo( 'name' ); ?></p>
 </div>
 
 <nav id="service_hook">
-	<a href="?" style="background-image: url(http://scav1.com/wp-content/themes/obtvse/images/bolt_large.png); background-size: 100%;">Service Name</a>
+	<a href="?" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/bolt_large.png); background-size: 100%;">Service Name</a>
 </nav>
 
 <ul id="magic_bar">
 	<li class="triangle">&nbsp;</li>
 	<li class="catch"><p><?php bloginfo( 'name' ); ?></p></li>	
 	<li class="photo">&nbsp;</li>	
-	<li class="login"><a href="http://scav1.com/wp-admin" class="login">Log in</a></li>
+	<li class="login"><a href="<?php echo home_url(); ?>/wp-admin" class="login">Log in</a></li>
 </ul>
 <script>
 var username = "<?php bloginfo( 'name' ); ?>";
-var custom_domain = "scav1.com";
-var appdomain = "scav1.com";
+var custom_domain = "<?php echo substr(home_url(), 7, 99); ?>";
+var appdomain = "<?php echo substr(home_url(), 7, 99); ?>";
 var color = "66A3D2";
 </script>
 
@@ -48,7 +48,6 @@ header#simple span.dot_pulse {border: 10px solid #66A3D2;}
 aside#network_blog.start {background-color: #66A3D2;}
 </style>
 
-<!--<script src="http://scav1.com/wp-content/themes/obtvse/build.blog.js" type="text/javascript"></script>-->
-<script src="http://scav1.com/wp-content/themes/obtvse/s1.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/s1.js" type="text/javascript"></script>
 </body>
 </html>
