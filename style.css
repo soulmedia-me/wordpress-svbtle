@@ -1,5 +1,5 @@
 /*
-	Theme Name: Obtvse
+	Theme Name: Svbtle
 	Theme URI: http://scav1.com/
 	Author: Joseph Scavone
 	Author URI: http://scav1.com/
@@ -7,6 +7,49 @@
 	License: GNU General Public License v2.0
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+@font-face {
+	font-family:	"ff-meta-web-pro";
+	src:	url("fonts/MetaPro-Bd.otf") format("opentype");
+	font-style:		normal;
+	font-weight:	700;
+}
+@font-face {
+	font-family:	"proxima-nova";
+	src:	url("fonts/proximanova-light-webfont.eot"),
+				url("fonts/proximanova-light-webfont.woff") format("woff"),
+				url("fonts/proximanova-light-webfont.ttf") format("truetype"),
+				url("fonts/proximanova-light-webfont.svg#filename") format("svg");
+	font-style:		normal;
+	font-weight:	100;
+}
+@font-face {
+	font-family:	"proxima-nova";
+	src:	url("fonts/proximanova-regular-webfont.eot"),
+				url("fonts/proximanova-regular-webfont.woff") format("woff"),
+				url("fonts/proximanova-regular-webfont.ttf") format("truetype"),
+				url("fonts/proximanova-regular-webfont.svg#filename") format("svg");
+	font-style:		normal;
+	font-weight:	400;
+}
+@font-face {
+	font-family:	"proxima-nova";
+	src:	url("fonts/proximanova-semibold-webfont.eot"),
+				url("fonts/proximanova-semibold-webfont.woff") format("woff"),
+				url("fonts/proximanova-semibold-webfont.ttf") format("truetype"),
+				url("fonts/proximanova-semibold-webfont.svg#filename") format("svg");
+	font-style:		normal;
+	font-weight:	600;
+}
+@font-face {
+	font-family:	"proxima-nova";
+	src:	url("fonts/proximanova-bold-webfont.eot"),
+				url("fonts/proximanova-bold-webfont.woff") format("woff"),
+				url("fonts/proximanova-bold-webfont.ttf") format("truetype"),
+				url("fonts/proximanova-bold-webfont.svg#filename") format("svg");
+	font-style:		normal;
+	font-weight:	800;
+}
 
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
 
