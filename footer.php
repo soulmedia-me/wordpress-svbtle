@@ -48,6 +48,6 @@ header#simple span.dot_pulse {border: 10px solid #66A3D2;}
 aside#network_blog.start {background-color: #66A3D2;}
 </style>
 
-<script src="<?php echo get_template_directory_uri(); ?>/s1.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/blog.js" type="text/javascript"></script>
 </body>
 </html>
