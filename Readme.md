@@ -14,7 +14,7 @@ All animations and "kudos" system work!
 
 ![][1]
 
- [1]: https://github.com/scavone/wordpress-svbtle/raw/master/wordpress-svbtle/screenshot.png
+ [1]: https://github.com/scavone/wordpress-svbtle/raw/master/screenshot.png
 
 
 ## Todo
