@@ -9,6 +9,8 @@
 4. Your site is ready to go!
 
 All animations and "kudos" system work!
+Sidebar menu is customizable using built-in WP menus
+
 
 ## Screenshots 
 
@@ -19,12 +21,14 @@ All animations and "kudos" system work!
 
 ## Todo
 * Allow custom images & colors to be chosen in the admin section. 
+* Clean up file structure & images
+* Remove unnecessary files
 
 ## License 
 
 (The MIT License)
 
-Copyright (c) 2012 Joseph SCavone &lt;joseph@scav1.com&gt;
+Copyright (c) 2012 Joseph Scavone &lt;joseph@scav1.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
