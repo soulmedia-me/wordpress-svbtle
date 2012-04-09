@@ -1,15 +1,15 @@
 # wordpress-svbtle
-#### Wordpress Theme designed from svbtle.com.
+#### Svbtle.com inspired Wordpress theme
 
-  [Follow us on twitter]: http://twitter.com/jscavone
+  [Follow me on twitter]: http://twitter.com/jscavone
 ## Installation
-1. Install contents in wp-content/themes/svbtle folder
+1. Move the folder /svbtle into wp-content/themes/
 2. Enable the theme from the admin panel
 3. Move kudos.php to the root of your wordpress installation.
 4. Your site is ready to go!
 
-All animations and "kudos" system work!
-Sidebar menu is customizable using built-in WP menus
+All animations and "kudos" work!
+Menu is customizable using built-in WP menus
 
 
 ## Screenshots 
@@ -22,7 +22,6 @@ Sidebar menu is customizable using built-in WP menus
 ## Todo
 * Allow custom images & colors to be chosen in the admin section. 
 * Clean up file structure & images
-* Remove unnecessary files
 
 ## License 
 
