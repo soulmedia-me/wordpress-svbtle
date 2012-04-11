@@ -181,7 +181,7 @@ a.buttonize:hover{background-color:#00a2ff}
 
 a.buttonize.square{border-radius:5px}
 
-a.buttonize.square.greendot{padding-left:44px;background-image:url(//scav1.com/wp-content/themes/obtvse/images/greendot.png);background-position:14px 15px;background-repeat:no-repeat}
+a.buttonize.square.greendot{padding-left:44px;background-image:url(//scav1.com/wp-content/themes/svbtle/images/greendot.png);background-position:14px 15px;background-repeat:no-repeat}
 
 figure.hover_select{position:absolute;right:30px;top:70px;width:100px;height:100px;text-align:center}
 
@@ -205,7 +205,7 @@ figure.hover_select.poke.done p.kcount{color:#000}
 
 figure.hover_select p.kcount.active{font-size:15px;margin-top:10px}
 
-figure.hover_select.done div.circle{background:#000 url(//scav1.com/wp-content/themes/obtvse/images/white_lightning.png) center center no-repeat;border:4px solid #000}
+figure.hover_select.done div.circle{background:#000 url(//scav1.com/wp-content/themes/svbtle/images/white_lightning.png) center center no-repeat;border:4px solid #000}
 
 figure.hover_select.poke.done div.circle{border:10px solid #000}
 
@@ -267,11 +267,11 @@ nav.pagination span.next:hover,nav.pagination span.prev:hover{opacity:.7}
 
 nav.pagination span.next{display:block;float:right}
 
-nav.pagination span.next a{width:123px;height:27px;background:url(//scav1.com/wp-content/themes/obtvse/images/next_button.png) center center no-repeat;text-indent:-9999px;display:block}
+nav.pagination span.next a{width:123px;height:27px;background:url(//scav1.com/wp-content/themes/svbtle/images/next_button.png) center center no-repeat;text-indent:-9999px;display:block}
 
 nav.pagination span.prev{display:block;float:left}
 
-nav.pagination span.prev a{width:123px;height:27px;background:url(//scav1.com/wp-content/themes/obtvse/images/prev_button.png) center center no-repeat;text-indent:-9999px;display:block}
+nav.pagination span.prev a{width:123px;height:27px;background:url(//scav1.com/wp-content/themes/svbtle/images/prev_button.png) center center no-repeat;text-indent:-9999px;display:block}
 
 p.draft_notice{color:#eb3d0e;font-size:40px;font-weight:700;line-height:45px}
 
@@ -285,7 +285,7 @@ h1#master_logo a{font-family:"freight-sans-pro",sans-serif;font-weight:900;font-
 
 h1#master_logo a.pulsation{display:block;width:45px;height:45px;border-radius:45px;-moz-border-radius:45px;-webkit-border-radius:45px;background-color:#fff;position:relative;overflow-y:none;border:4px solid #000}
 
-h1#master_logo a.pulsation.done{background:#000 url(//scav1.com/wp-content/themes/obtvse/images/checkmark_white.png) center center no-repeat}
+h1#master_logo a.pulsation.done{background:#000 url(//scav1.com/wp-content/themes/svbtle/images/checkmark_white.png) center center no-repeat}
 
 h1#master_logo a.pulsation div.pie_selected{position:relative;width:25px;height:25px;margin:0 auto;top:50%}
 
@@ -331,27 +331,27 @@ span.dot_pulse{position:absolute;left:-5px;top:-5px;margin:0;padding:0;width:90p
 
 }
 
-nav#service_hook{position:absolute;top:50px;right:50px;border-radius:4px;display:block;width:60px;height:40px;background:#000 url(//scav1.com/wp-content/themes/obtvse/images/down_arrow_tiny_white.png) 37px 50% no-repeat;z-index:9999;display:block}
+nav#service_hook{position:absolute;top:50px;right:50px;border-radius:4px;display:block;width:60px;height:40px;background:#000 url(//scav1.com/wp-content/themes/svbtle/images/down_arrow_tiny_white.png) 37px 50% no-repeat;z-index:9999;display:block}
 
-nav#service_hook a{color:#fff;text-decoration:none;background:url(//scav1.com/wp-content/themes/obtvse/images/lightning_small_nav.png) center center no-repeat;width:35px;height:40px;text-indent:-9999px;display:block;position:relative;text-decoration:none;border:none}
+nav#service_hook a{color:#fff;text-decoration:none;background:url(//scav1.com/wp-content/themes/svbtle/images/lightning_small_nav.png) center center no-repeat;width:35px;height:40px;text-indent:-9999px;display:block;position:relative;text-decoration:none;border:none}
 
 ul#magic_bar{border:1px solid #a9a9a9;border-radius:5px;background-color:#fff;position:absolute;top:110px;right:40px;width:250px;box-shadow:0 0 3px #a9a9a9;z-index:999;display:none}
 
 ul#magic_bar li{display:block}
 
-ul#magic_bar li a{line-height:55px;border-bottom:1px solid #dfdfdf;display:block;font-size:19px;padding-left:55px;text-decoration:none;background:url(//scav1.com/wp-content/themes/obtvse/images/circle.png) 15px 14px no-repeat}
+ul#magic_bar li a{line-height:55px;border-bottom:1px solid #dfdfdf;display:block;font-size:19px;padding-left:55px;text-decoration:none;background:url(//scav1.com/wp-content/themes/svbtle/images/circle.png) 15px 14px no-repeat}
 
 ul#magic_bar li.catch p{line-height:20px;margin-bottom:0;margin-top:0;border-bottom:1px solid #dfdfdf;padding:25px;padding-left:15px;font-size:35px;font-weight:900;color:#000}
 
-ul#magic_bar li.dashboard a{background-image:url(//scav1.com/wp-content/themes/obtvse/images/dashboard.png)}
+ul#magic_bar li.dashboard a{background-image:url(//scav1.com/wp-content/themes/svbtle/images/dashboard.png)}
 
-ul#magic_bar li.logout a,ul#magic_bar li.login a{background-image:url(//scav1.com/wp-content/themes/obtvse/images/logout.png)}
+ul#magic_bar li.logout a,ul#magic_bar li.login a{background-image:url(//scav1.com/wp-content/themes/svbtle/images/logout.png)}
 
-ul#magic_bar li.settings a{background-image:url(//scav1.com/wp-content/themes/obtvse/images/settings.png)}
+ul#magic_bar li.settings a{background-image:url(//scav1.com/wp-content/themes/svbtle/images/settings.png)}
 
-ul#magic_bar li.blog a{background-image:url(//scav1.com/wp-content/themes/obtvse/images/blog.png)}
+ul#magic_bar li.blog a{background-image:url(//scav1.com/wp-content/themes/svbtle/images/blog.png)}
 
-ul#magic_bar li.write a,ul#magic_bar li.signup a{background-image:url(//scav1.com/wp-content/themes/obtvse/images/write.png)}
+ul#magic_bar li.write a,ul#magic_bar li.signup a{background-image:url(//scav1.com/wp-content/themes/svbtle/images/write.png)}
 
 ul#magic_bar li a:hover{background-color:#f8f8f8}
 
@@ -359,13 +359,13 @@ ul#magic_bar li a:active{background-color:#e2e2e2}
 
 ul#magic_bar li{clear:both;display:block}
 
-ul#magic_bar li.triangle{background:transparent url(//scav1.com/wp-content/themes/obtvse/images/triangle.png) top right no-repeat;margin-top:-14px;margin-right:25px}
+ul#magic_bar li.triangle{background:transparent url(//scav1.com/wp-content/themes/svbtle/images/triangle.png) top right no-repeat;margin-top:-14px;margin-right:25px}
 
 ul#magic_bar li:nth-child(2) a:hover{border-top-right-radius:5px;border-top-left-radius:5px}
 
 ul#magic_bar li:last-child a:hover{border-bottom-right-radius:5px;border-bottom-left-radius:5px}
 
-ul#magic_bar li.photo{margin-bottom:5px;display:block;box-shadow:inset 0 0 10px #000;background:#444 url(//scav1.com/wp-content/themes/obtvse/images/chemist.png) -150px -30px no-repeat;height:70px}
+ul#magic_bar li.photo{margin-bottom:5px;display:block;box-shadow:inset 0 0 10px #000;background:#444 url(//scav1.com/wp-content/themes/svbtle/images/chemist.png) -150px -30px no-repeat;height:70px}
 
 li.padded{padding:30px;padding-left:50px;padding-right:50px}
 
