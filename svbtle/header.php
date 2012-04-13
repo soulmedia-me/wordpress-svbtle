@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title><?php bloginfo('name'); ?><?php wp_title('|',true); ?></title>
 	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 	<script type="text/javascript">
