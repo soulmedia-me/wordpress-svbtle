@@ -8,8 +8,9 @@
 3. Move kudos.php to the root of your wordpress installation.
 4. Your site is ready to go!
 
-All animations and "kudos" work!
-Menu is customizable using built-in WP menus
+All animations and "kudos" work!  
+Menu is customizable using built-in WP menus  
+* If the Anchor character does not display correctly in your browser, you may not have a Unicode font on your system that supports this	particular symbol.
 
 
 ## Screenshots 
