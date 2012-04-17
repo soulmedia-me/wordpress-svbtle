@@ -8,7 +8,7 @@
 <?php //get_sidebar(); ?>
 	<p class="networkify" style="color: #777">Original design by <a href="http://svbtle.com">Svbtle</a>.</p>
 	<figure id="logo_blog">
-		<a href="/" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/chain_link.png);"><?php bloginfo( 'name' ); ?></a>
+		<a href="/" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/icons/chain_link.png);"><?php bloginfo( 'name' ); ?></a>
 		<span class="dot_pulse"></span>
 	</figure>
 </header>
@@ -19,12 +19,12 @@
 	</a>
 </aside>
 <div class="identify">
-	<h3 style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/chain_link_large.png);">&nbsp;</h3>
+	<h3 style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/icons/chain_link_large.png);">&nbsp;</h3>
 	<p class="name"><?php bloginfo( 'name' ); ?></p>
 </div>
 
 <nav id="service_hook">
-	<a href="?" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/bolt_large.png); background-size: 100%;">Service Name</a>
+	<a href="?" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/icons/bolt_large.png); background-size: 100%;">Service Name</a>
 </nav>
 
 <ul id="magic_bar">
