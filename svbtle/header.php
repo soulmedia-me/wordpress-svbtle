@@ -5,7 +5,6 @@
 	<title><?php bloginfo('name'); ?><?php wp_title('|',true); ?></title>
 	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 	<style type="text/css">.tk-freight-sans-pro{font-family:"freight-sans-pro",sans-serif;}.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-ff-meta-web-pro{font-family:"ff-meta-web-pro",sans-serif;}</style>
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts.css">
 	<link href="<?php bloginfo('rss2_url'); ?>" rel="alternate" title="<?php _e('RSS'); ?>" type="application/rss+xml" />
 	<meta name="Description" content="<?php bloginfo( 'description' ); ?>"/>
 	<?php add_action( 'wp_enqueue_scripts', 'main_css' );  ?>
