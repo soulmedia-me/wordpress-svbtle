@@ -13,17 +13,6 @@
  *
  * Date: Mon Nov 21 21:11:03 2011 -0500
  */
-function sizeUp() {
-    var a = navigator.userAgent.toLowerCase(), b = a.match(/(iphone|ipod|ipad|android|mobile)/);
-    b || ($(window).width() > 775 ? $("header#simple, aside#network_blog").addClass("bigsite") : $("header#simple, aside#network_blog").removeClass("bigsite"))
-}
-function startup() {
-    $("div.identify").addClass("die"), $("aside#network_blog").removeClass("start"), $("#logo_blog").addClass("start"), setTimeout("$('#logo_blog').removeClass('start');", 500)
-}
-function inView(a) {
-    var b = a.getBoundingClientRect();
-    return b.top >= 0 && b.left >= 0 && b.bottom <= window.innerHeight && b.right <= window.innerWidth
-}
 (function(a, b) {
     function h(a) {
         var b = g[a] = {}, c, d;
@@ -1031,8 +1020,7 @@ function inView(a) {
                     return a.checked = f.inArray(f(a).val(), b) >= 0
             }})
     });
-    var z = /^(?:textarea|input|select)$/i, A = /^([^\.]*)?(?:\.(.+))?$/
-    , B = /\bhover(\.\S+)?\b/, C = /^key/, D = /^(?:mouse|contextmenu)|click/, E = /^(?:focusinfocus|focusoutblur)$/, F = /^(\w*)(?:#([\w\-]+))?(?:\.([\w\-]+))?$/, G = function(a) {
+    var z = /^(?:textarea|input|select)$/i, A = /^([^\.]*)?(?:\.(.+))?$/, B = /\bhover(\.\S+)?\b/, C = /^key/, D = /^(?:mouse|contextmenu)|click/, E = /^(?:focusinfocus|focusoutblur)$/, F = /^(\w*)(?:#([\w\-]+))?(?:\.([\w\-]+))?$/, G = function(a) {
         var b = F.exec(a);
         return b && (b[1] = (b[1] || "").toLowerCase(), b[3] = b[3] && new RegExp("(?:^|\\s)" + b[3] + "(?:\\s|$)")), b
     }, H = function(a, b) {
@@ -1042,7 +1030,8 @@ function inView(a) {
         return f.event.special.hover ? a : a.replace(B, "mouseenter$1 mouseleave$1")
     };
     f.event = {add: function(a, c, d, e, g) {
-            var h, i, j, k, l, m, n, o, p, q, r, s;
+            var h, i, j, k, l, m
+            , n, o, p, q, r, s;
             if (a.nodeType === 3 || a.nodeType === 8 || !c || !d || !(h = f._data(a)))
                 return;
             d.handler && (p = d, d = p.handler), d.guid || (d.guid = f.guid++), j = h.events, j || (h.events = j = {}), i = h.handle, i || (h.handle = i = function(a) {
@@ -2035,8 +2024,7 @@ function inView(a) {
                 return a.push.apply(a, this.toArray()), this.pushStack(a, "before", arguments)
             }
         },after: function() {
-            if (this
-            [0] && this[0].parentNode)
+            if (this[0] && this[0].parentNode)
                 return this.domManip(arguments, !1, function(a) {
                     this.parentNode.insertBefore(a, this.nextSibling)
                 });
@@ -2052,7 +2040,8 @@ function inView(a) {
         },empty: function() {
             for (var a = 0, b; (b = this[a]) != null; a++) {
                 b.nodeType === 1 && f.cleanData(b.getElementsByTagName("*"));
-                while (b.firstChild)
+                while (
+                b.firstChild)
                     b.removeChild(b.firstChild)
             }
             return this
@@ -2780,12 +2769,12 @@ function inView(a) {
     })
 })(window), function(a, b) {
     var c;
-    a.rails = c = {linkClickSelector: "a[data-confirm], a[data-method], a[data-remote], a[data-disable-with]",inputChangeSelector: "select[data-remote], input[data-remote], textarea[data-remote]",formSubmitSelector: "form",formInputClickSelector: "form input[type=submit], form input[type=image], form button[type=submit], form button:not(button[type])",disableSelector: "input[data-disable-with], button[data-disable-with], textarea[data-disable-with]",enableSelector: "input[data-disable-with]:disabled, button[data-disable-with]:disabled, textarea[data-disable-with]:disabled",requiredInputSelector: "input[name][required]:not([disabled]),textarea[name][required]:not([disabled])",fileInputSelector: "input:file",linkDisableSelector: "a[data-disable-with]"
-        //,CSRFProtection: function(b) {
+		a.rails = c = {linkClickSelector: "a[data-confirm], a[data-method], a[data-remote], a[data-disable-with]",inputChangeSelector: "select[data-remote], input[data-remote], textarea[data-remote]",formSubmitSelector: "form",formInputClickSelector: "form input[type=submit], form input[type=image], form button[type=submit], form button:not(button[type])",disableSelector: "input[data-disable-with], button[data-disable-with], textarea[data-disable-with]",enableSelector: "input[data-disable-with]:disabled, button[data-disable-with]:disabled, textarea[data-disable-with]:disabled",requiredInputSelector: "input[name][required]:not([disabled]),textarea[name][required]:not([disabled])",fileInputSelector: "input:file",linkDisableSelector: "a[data-disable-with]"
+				//,CSRFProtection: function(b) {
         //var c = a('meta[name="csrf-token"]').attr("content");
         //c && b.setRequestHeader("X-CSRF-Token", c)
-        //        }
-        ,fire: function(b, c, d) {
+        //}
+				,fire: function(b, c, d) {
             var e = a.Event(c);
             return b.trigger(e, d), e.result !== !1
         },confirm: function(a) {
@@ -2850,8 +2839,7 @@ function inView(a) {
                 return c.stopEverything(a)
             })
         },enableElement: function(a) {
-            a.data("ujs:enable-with") !== b && (a.html(a.data("ujs:enable-with")), a.data("ujs:enable-with", !1)), a.unbind("click.railsDisable"
-            )
+            a.data("ujs:enable-with") !== b && (a.html(a.data("ujs:enable-with")), a.data("ujs:enable-with", !1)), a.unbind("click.railsDisable")
         }}, a.ajaxPrefilter(function(a, b, d) {
         a.crossDomain //|| c.CSRFProtection(d)
     }), a(document).delegate(c.linkDisableSelector, "ajax:complete", function() {
@@ -2911,47 +2899,75 @@ function inView(a) {
                 return g(j[1] || "");
         return null
     }
-}(jQuery), $(document).ready(function() {
-    function e(a) {
-        $.post("/kudos.php", {external_id: a})
+}(jQuery), function(a) {
+    function d() {
+        var b = a(window).width(), c = a(window).height(), d = navigator.userAgent.toLowerCase(), e = d.match(/(iphone|ipod|ipad|android|mobile)/)
     }
-    var a = $.cookie("intro");
-    if (a != username) {
-        $("aside#network_blog, div.identify").show(), setTimeout("startup();", 2e3);
-        var b = new Date;
-        b = b.setTime(b.getTime() + 6e5), eDate = new Date(b), $.cookie("intro", username, {path: "/",expires: eDate})
+    function e() {
+        var b = a.cookie(a.user.username);
+        if (b != a.user.username) {
+            a("#cover").show(), a("#cover").addClass("animate"), setTimeout(function() {
+                a("#cover").addClass("perform"), setTimeout(function() {
+                    a("#cover").remove()
+                }, 2e3)
+            }, 2e3);
+            var c = new Date;
+            c = c.setTime(c.getTime() + 6e5), c = new Date(c), a.cookie(a.user.username, a.user.username, {path: "/",expires: c})
+        } else
+            a("#cover").remove()
     }
-    var c, d;
-    $.ajaxSetup( //{beforeSend: function(a) {
-    //a.setRequestHeader("X-CSRF-Token", $('meta[name="csrf-token"]').attr("content"))
-    //}}
-    ), sizeUp(), $(window).resize(function() {
-        clearTimeout(c), c = setTimeout("sizeUp();", 100)
-    }), $("#service_hook").mouseenter(function() {
-        clearTimeout(d), $("#magic_bar").show()
-    }).mouseleave(function() {
-        d = setTimeout("$('#magic_bar').hide();", 300)
-    }), $("#magic_bar").mouseenter(function() {
-        clearTimeout(d), $("#magic_bar").show()
-    }).mouseleave(function() {
-        d = setTimeout("$('#magic_bar').hide();", 300)
-    }), $("figure.hover_select").click(function(a) {
+    function f() {
+        a("code").length != 0 && (a("code").addClass("prettyprint"), a.getScript("/wp-content/themes/svbtle/js/prettify.js").done(function(b, c) {
+            var d = "/wp-content/themes/svbtle/css/prettify.css";
+            a.get(d, function(b) {
+                a('<style type="text/css"></style>').html(b).appendTo("head")
+            }), prettyPrint()
+        }))
+    }
+    function g() {
+        var a = navigator.userAgent.toLowerCase(), b = a.match(/(iphone|ipod|ipad|android|mobile)/);
+        !!b
+    }
+    function l(a) {
+        a.oldKudoText = a.children("p.count").html(), a.children("p.count").hide(), a.append('<p class="count notice"><span class="dont-move">Don\'t move...</span></p>'), a.addClass("filling").removeClass("animate"), a.parent("figure").addClass("filling"), c(function() {
+            n(a)
+        }, 1e3)
+    }
+    function m(a) {
+        c(function() {
+        }, 1e3), a.hasClass("kudoable") && (a.removeClass("filling").addClass("animate"), a.parent("figure").removeClass("filling"), a.children("p.count").hide().html(a.oldKudoText), a.children("p.notice").remove(), a.children("p.count").fadeIn("slow"))
+    }
+    function n(b) {
+        b.flag = !0, b.article = b.closest("article").attr("id"), a.post("/kudos.php", {article: b.article,cooking: h}), b.removeClass("animate").removeClass("kudoable").removeClass("filling").addClass("completed"), b.parent("figure").removeClass("filling"), a.cookie(b.article, !0), newnum = parseInt(b.oldKudoText) + 1, b.newtext = newnum + " " + '<span class="identifier">Kudos</span>', b.children("p.notice").hide().remove(), b.children("p.count").html(b.newtext).fadeIn()
+    }
+    var b = function() {
+        var a = 0;
+        return function(b, c) {
+            clearTimeout(a), a = setTimeout(b, c)
+        }
+    }(), c = function() {
+        var a = 0;
+        return function(b, c) {
+            clearTimeout(a), a = setTimeout(b, c)
+        }
+    }();
+    bootstrapUser(), e(), g(), d(), f(), a(window).resize(function() {
+        b(function() {
+            d()
+        }, 500)
+    }), a("a.kudos").each(function(b) {
+        i = a(this).closest("article").attr("id"), a.cookie(i) && a(this).removeClass("animate").removeClass("kudoable").addClass("completed")
+    }), a.kudo = {}, a.kudo.flag = !1, a.kudo.article = !1;
+    var h = 505343366755, i = !1, j = a.user.username, k = !1;
+    a("a.kudos").click(function(a) {
         return a.preventDefault(), !1
-    });
-    var f, g;
-    $("figure.hover_select").mouseenter(function() {
-        clearTimeout(f), desc = $(this).find("p.identifier").html(), kkcount = $(this).find("p.kcount").html(), $(this).find("p.identifier").hide(), $(this).hasClass("done") || $(this).find("p.kcount").html("Don't move...").addClass("active");
-        var a = $.proxy(function() {
-            $(this).find("div.filled").hide(), $(this).find("p.kcount").html("Sent!");
-            var a = $(this).find("span.extid").html();
-            $(this).hasClass("sent") || (e(a), $(this).addClass("sent")), $(this).addClass("done")
-        }, $(this));
-        f = setTimeout(a, 1e3)
+    }), a("a.kudos").mouseenter(function() {
+        k = a(this), k.hasClass("kudoable") && l(k)
     }).mouseleave(function() {
-        clearTimeout(f), $(this).hasClass("done") || ($(this).find("p.kcount").html(kkcount).removeClass("active").show(), $(this).find("p.identifier").html(desc).show())
+        k = a(this), m(k)
+    }), a("a.kudos").live("touchstart", function(b) {
+        k = a(this), k.hasClass("kudoable") && l(k), b.preventDefault()
+    }), a("a.kudos").live("touchend", function(b) {
+        k = a(this), m(k), b.preventDefault()
     })
-}), setInterval(function() {
-    $("ul.posts li figure.hover_select").each(function(a) {
-        inView(this) ? $(this).addClass("animate") : $(this).removeClass("animate")
-    })
-}, 2e3);
+}(jQuery);

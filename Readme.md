@@ -22,7 +22,6 @@ Menu is customizable using built-in WP menus
 
 ## Todo
 * Allow custom images & colors to be chosen in the admin section. 
-* Clean up file structure & images
 
 ## License 
 

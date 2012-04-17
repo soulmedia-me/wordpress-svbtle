@@ -1,53 +1,31 @@
+
 </section>
-<header id="simple"> 
-	<h1><a href="/"><?php bloginfo( 'name' ); ?></a></h1>
-	<h2><?php bloginfo( 'description' ); ?></h2>
-	<ul id="user_info">
-		<?php wp_nav_menu(array('menu' => 'custom_menu')); ?>
-	</ul>
-<?php //get_sidebar(); ?>
-	<p class="networkify" style="color: #777">Original design by <a href="http://svbtle.com">Svbtle</a>.</p>
-	<figure id="logo_blog">
-		<a href="/" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/icons/chain_link.png);"><?php bloginfo( 'name' ); ?></a>
-		<span class="dot_pulse"></span>
-	</figure>
-</header>
-
-<aside id="network_blog" class="start">
-	<a href="http://wordpress.org">
-		<h4>Wordpress</h4>
-	</a>
-</aside>
-<div class="identify">
-	<h3 style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/icons/chain_link_large.png);">&nbsp;</h3>
-	<p class="name"><?php bloginfo( 'name' ); ?></p>
-</div>
-
-<nav id="service_hook">
-	<a href="?" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/icons/bolt_large.png); background-size: 100%;">Service Name</a>
-</nav>
-
-<ul id="magic_bar">
-	<li class="triangle">&nbsp;</li>
-	<li class="catch"><p><?php bloginfo( 'name' ); ?></p></li>	
-	<li class="photo">&nbsp;</li>	
-	<li class="login"><a href="<?php echo home_url(); ?>/wp-admin" class="login">Log in</a></li>
-</ul>
-<script>
-var username = "<?php bloginfo( 'name' ); ?>";
-var custom_domain = "<?php echo substr(home_url(), 7, 99); ?>";
-var appdomain = "<?php echo substr(home_url(), 7, 99); ?>";
-var color = "66A3D2";
-</script>
-
-<style>
-a:hover, article h2 a:hover {color: #66A3D2;}
-a.buttonize:hover {background-color: #66A3D2;}
-ul li article blockquote {border-color: #66A3D2;}
-header#simple span.dot_pulse {border: 10px solid #66A3D2;}
-aside#network_blog.start {background-color: #66A3D2;}
+<style type="text/css">
+	a:hover { color: #66A3D2;}
+	article blockquote { border-color: #66A3D2;}
+	figure#user_logo div.pulse { border-color: #66A3D2; }
+	figure#user_logo div.logo, article a.kudos.completed div.circle div.filled{background-image: url(<?php echo get_template_directory_uri(); ?>/images/icons/chain_link_large.png);}
+	figure#cover_logo{background-image: url(<?php echo get_template_directory_uri(); ?>/images/icons/chain_link_large.png);}
+	nav.pagination span.next a, footer#paginate a.back_to_blog { border-color: #66A3D2; color: #66A3D2;}
+	nav.pagination span.next a:hover, nav.pagination span.prev a:hover, footer#paginate a.back_to_blog:hover {border-color:#66A3D2;background-color: #66A3D2;}
+	section#cover{background-color:#66A3D2;}
+	section#posts.preview header h2 {color:#66A3D2;}
+	div.pullback a {color:#66A3D2; border-color:#66A3D2;}
+	div.pullback a:hover {border-color:#66A3D2;background-color:#66A3D2;}
+	::-moz-selection { background: #66A3D2; color: #fff; text-shadow: none; }
+	::selection { background: #66A3D2; color: #fff; text-shadow: none; }
 </style>
+<script>
+function bootstrapUser(){
+	$.user = {};
+	$.user.appdomain = "<?php echo substr_replace(home_url(), '', 0, 7); ?>";
+	$.user.cdomain = "<?php echo substr_replace(home_url(), '', 0, 7); ?>";
+	$.user.username = "<?php bloginfo( 'name' ); ?>";
+	$.user.icon = "chain_link";
+	$.user.ccolor = "66A3D2";
+}
+</script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/blog.js" type="text/javascript"></script>
 
-<script src="<?php echo get_template_directory_uri(); ?>/blog.js" type="text/javascript"></script>
 </body>
 </html>
