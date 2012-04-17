@@ -29,6 +29,12 @@ function content_nav( $nav_id ) {
 		<?php endif;
 }
 
+function single_content_nav( $nav_id ) {
+	?>
+	<a href="<?php echo home_url(); ?>" class="back_to_blog">←&nbsp;&nbsp;&nbsp;Back to blog</a>
+	<?php 
+}
+
 function register_custom_menu() {
 	register_nav_menu('custom_menu', __('Svbtle Menu'));
 }
