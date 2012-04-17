@@ -7,6 +7,8 @@
 			<h2>
 				<a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a>
 				<a href="<?php echo home_url('/'); ?>?p=<?php the_ID(); ?>" class="anchor">&#9875;</a>
+				<!--Use the anchor image instead of unicode. Comment line above & uncomment line below -->
+				<!--<a href="<?php echo home_url('/'); ?>?p=<?php the_ID(); ?>" class="anchor"><img src="<?php echo get_template_directory_uri(); ?>/images/anchor.png" width=15px></a>-->
 			</h2>
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
 			
