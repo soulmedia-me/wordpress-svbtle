@@ -10,14 +10,17 @@
 
 All animations and "kudos" work!  
 Menu is customizable using built-in WP menus  
-* If the Anchor character does not display correctly in your browser, you may not have a Unicode font on your system that supports this	particular symbol.
+Built in theme settings
 
 
 ## Screenshots 
 
 ![][1]
 
- [1]: https://github.com/scavone/wordpress-svbtle/raw/master/screenshot.png
+![][2]
+
+ [1]: https://github.com/scavone/wordpress-svbtle/raw/master/screenshot_main.png
+ [2]: https://github.com/scavone/wordpress-svbtle/raw/master/screenshot_options.png
 
 
 ## Todo
