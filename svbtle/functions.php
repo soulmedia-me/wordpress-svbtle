@@ -39,4 +39,14 @@ function register_custom_menu() {
 	register_nav_menu('custom_menu', __('Svbtle Menu'));
 }
 add_action('init', 'register_custom_menu');
+
+require_once ( get_stylesheet_directory() . '/theme-options.php' );
+
+
+add_action('init', 'load_theme_scripts');
+function load_theme_scripts() {
+    wp_enqueue_style( 'farbtastic' );
+    wp_enqueue_script( 'farbtastic' );
+}
+
 ?>
