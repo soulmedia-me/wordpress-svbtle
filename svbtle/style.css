@@ -144,7 +144,7 @@ a.network_link{position:absolute;left:30px;bottom:30px;font-size:12px;color:#777
 a.network_link span{border-bottom:1px solid #ccc}
 figure#user_logo{position:absolute;left:30px;top:30px;width:120px;height:120px;border-radius:50%;border:5px solid #f8f8f8}
 figure#user_logo a{display:block;height:120px;width:120px;border:none}
-figure#user_logo div.logo{position:absolute;border-radius:50%;width:80px;height:80px;left:50%;top:50%;margin-top:-42px;margin-left:-42px;border:2px solid #fff;background-size:100%;-moz-background-size:100%;background:#000 url(//scav1.com/wp-content/themes/svbtle2/images/bolt_large.png) center center no-repeat}
+figure#user_logo div.logo{position:absolute;border-radius:50%;width:80px;height:80px;left:50%;top:50%;margin-top:-42px;margin-left:-42px;border:2px solid #fff;background-size:100%;-moz-background-size:100%;background:#000 url(/wp-content/themes/svbtle/images/bolt_large.png) center center no-repeat}
 figure#user_logo div.logo,section#cover figure#cover_logo{background-size:100%;-moz-background-size:100%}
 figure#user_logo div.pulse{position:absolute;border-radius:50%;width:120px;height:120px;border:10px solid #f00;left:50%;top:50%;margin-top:-70px;margin-left:-70px}
 div.pulse.animate{-webkit-animation-name:dotPulse;-moz-animation-name:dotPulse;-webkit-animation-duration:5s;-moz-animation-duration:5s;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-webkit-transform:translateZ(0)}
@@ -163,7 +163,7 @@ article div.circle{background-color:#fff;width:40px;height:40px;border-radius:50
 article div.circle div.filled{background-color:#000;width:10px;height:10px;border-radius:50%;position:absolute;top:50%;left:50%;margin-left:-5px;margin-top:-5px;-webkit-transition-property:margin,width,height,color;-webkit-transition-duration:1s;-webkit-transition-timing-function:ease-in-out;-moz-transition-property:margin,width,height,color;-moz-transition-duration:1s;-moz-transition-timing-function:ease-in-out}
 article a.kudos.animate div.circle div.filled{-webkit-animation-name:hoverPulse;-moz-animation-name:hoverPulse;-webkit-animation-duration:5s;-moz-animation-duration:5s;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-webkit-transform:translateZ(0)}
 article a.kudos.filling div.circle div.filled{width:42px;height:42px;margin-left:-21px;margin-top:-21px}
-article a.kudos.completed div.circle div.filled{width:42px;height:42px;margin-left:-21px;margin-top:-21px;background:#000 url(//scav1.com/wp-content/themes/svbtle2/images/bolt.png) center center no-repeat;background-size:80%;-moz-background-size:80%}
+article a.kudos.completed div.circle div.filled{width:42px;height:42px;margin-left:-21px;margin-top:-21px;background:#000 url(/wp-content/themes/svbtle/images/bolt.png) center center no-repeat;background-size:80%;-moz-background-size:80%}
 article a.kudos p{width:auto;display:block;text-transform:uppercase;line-height:18px;font-family:"freight-sans-pro",sans-serif;font-weight:900;font-size:20px;margin-top:5px;color:#000}
 article a.kudos p span{font-size:11px;font-weight:800;letter-spacing:1px;line-height:11px;display:block;margin-top:5px}
 article a.kudos p span.dont-move{font-size:18px;text-transform:none;line-height:22px;width:200px;margin-left:-50px;margin-top:8px;letter-spacing:0}
@@ -175,7 +175,7 @@ article a.kudos p span.dont-move{font-size:18px;text-transform:none;line-height:
 50%{opacity:.5}
 100%{opacity:1}
 }
-figure#cover_logo{position:absolute;left:50%;top:70px;width:120px;height:120px;border-radius:50%;border:10px solid #fff;margin-left:-70px;padding:0;background-size:100%;-moz-background-size:100%;background:url(//scav1.com/wp-content/themes/svbtle/images/bolt_large.png) center center no-repeat}
+figure#cover_logo{position:absolute;left:50%;top:70px;width:120px;height:120px;border-radius:50%;border:10px solid #fff;margin-left:-70px;padding:0;background-size:100%;-moz-background-size:100%;background:url(/wp-content/themes/svbtle/images/bolt_large.png) center center no-repeat}
 h1#cover_user a{font-family:"freight-sans-pro",sans-serif;font-weight:900;font-size:35px;line-height:60px;border:none;display:block;margin-top:230px;color:#fff;text-align:center}
 footer#paginate{padding:40px;padding-bottom:60px;padding-left:50px;padding-right:50px;border-top:1px solid #e2e2e2;position:relative}
 nav.pagination span{display:none}
