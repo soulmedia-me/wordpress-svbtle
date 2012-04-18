@@ -1,33 +1,29 @@
 <?php
+require('./wp-blog-header.php');
 
 $article = $_POST['article'];
 $cooking = $_POST['cooking'];
 
-$server = "localhost";
-$user = "";
-$pass = "";
-$db = "";
+$sql = "SELECT meta_value FROM wp_postmeta WHERE post_id = $article AND meta_key = 'wp-svbtle-kudos'";
 
-$con = mysql_connect($server, $user, $pass);
-if (!$con)
-  {
-  die('Could not connect: ' . mysql_error());
-  }
+$kudos = $wpdb->get_var( $wpdb->prepare( $sql ) );
 
-mysql_select_db($db, $con);
-
-$sql = "SELECT IF(SUM(meta_value) IS NOT NULL, SUM(meta_value), 0) meta_value FROM wp_postmeta WHERE post_id = $article AND meta_key = 'wp-svbtle-kudos'";
-$result = mysql_query($sql,$con);
-$kudos =  mysql_result($result,0);
-
-if ($kudos > "0") {
+if ( is_null($kudos) ) {
 	$kudos = ($kudos + 1);
-	mysql_query("UPDATE wp_postmeta SET meta_value = $kudos WHERE post_id = $article AND meta_key = 'wp-svbtle-kudos'");
+	$wpdb->insert( 'wp_postmeta',
+		array( 'post_id' => $article, 'meta_key' => 'wp-svbtle-kudos', 'meta_value' => $kudos),
+		array( '%d', '%s', '%d' )
+	);
+	echo $kudos;
 } else {
 	$kudos = ($kudos + 1);
-	mysql_query("INSERT INTO wp_postmeta (post_id, meta_key, meta_value) VALUES ($article, 'wp-svbtle-kudos', $kudos)");
+	$wpdb->update( 'wp_postmeta', 
+		array( 'meta_value' => $kudos), 
+		array( 'post_id' => $article, 'meta_key' => 'wp-svbtle-kudos'), 
+		array( '%d' ), 
+		array( '%d', '%s' ) 
+	);
+	echo $kudos;
 }
-
-mysql_close($con);
 
 ?>
