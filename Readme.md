@@ -20,11 +20,7 @@ Built in theme settings
 ![][2]
 
  [1]: https://github.com/scavone/wordpress-svbtle/raw/master/screenshot_main.png
- [2]: https://github.com/scavone/wordpress-svbtle/raw/master/screenshot_options.png
-
-
-## Todo
-* Allow custom images & colors to be chosen in the admin section. 
+ [2]: https://github.com/scavone/wordpress-svbtle/raw/master/screenshot_options.png 
 
 ## License 
 
