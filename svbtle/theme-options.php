@@ -88,6 +88,11 @@ $radio_options = array(
 		'value' => 'coffee',
 		'label' => __( 'Coffee', 'wordpress-svbtle' )
 	),
+	'day_night' => array(
+		'url' => get_template_directory_uri() . '/images/icons/day_night_large.png',
+		'value' => 'day_night',
+		'label' => __( 'Day Night', 'wordpress-svbtle' )
+	),
 	'disapprove' => array(
 		'url' => get_template_directory_uri() . '/images/icons/disapprove_large.png',
 		'value' => 'disapprove',
