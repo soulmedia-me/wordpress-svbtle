@@ -6,6 +6,7 @@
   <link href="<?php bloginfo('rss2_url'); ?>" rel="alternate" title="<?php _e('RSS'); ?>" type="application/rss+xml" />
   <meta name="description" content="<?php bloginfo( 'description' ); ?>"/>
   <meta name="generator" content="<?php echo substr_replace(home_url(), '', 0, 7); ?>" />
+	<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-precomposed.png" />
   <?php add_action( 'wp_enqueue_scripts', 'main_css' );  ?>
   <?php wp_head(); ?>
 	<?php $options = get_option ( 'svbtle_options' ); ?>
