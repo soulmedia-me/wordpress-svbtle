@@ -9,10 +9,10 @@
 				<?php if ( $options['anchor'] ) { ?><span class="anchor"><a href="<?php echo home_url('/'); ?>?p=<?php the_ID(); ?>">&#9875;</a></span><?php } ?>
 			</h2>
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
-			<?php $kudos = get_post_meta($post->ID, 'wp-svbtle-kudos', true); 
+			<?php $kudos = get_post_meta($post->ID, '_wp-svbtle-kudos', true); 
 						if ($kudos > "") { $kudos = $kudos; } else { $kudos = "0"; } ?>
 			<figure class="kudo">	
-				<a class="kudos kudoable animate" id="<?php the_permalink(); ?>">
+				<a class="kudos kudoable animate" id="<?php the_ID(); ?>">
 					<div class="circle"><div class="filled">&nbsp;</div></div>
 					<p class="count"><?php echo $kudos; ?> <span class="identifier">Kudos</p>
 				</a>

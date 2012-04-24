@@ -1,29 +1,16 @@
 <?php
 require('./wp-blog-header.php');
 
-$article = $_POST['article'];
+$post_id = $_POST['article'];
 $cooking = $_POST['cooking'];
 
-$sql = "SELECT meta_value FROM wp_postmeta WHERE post_id = $article AND meta_key = 'wp-svbtle-kudos'";
+$sql = "SELECT meta_value FROM wp_postmeta WHERE post_id = $post_id AND meta_key = '_wp-svbtle-kudos'";
 
 $kudos = $wpdb->get_var( $wpdb->prepare( $sql ) );
 
-if ( is_null($kudos) ) {
-	$kudos = ($kudos + 1);
-	$wpdb->insert( 'wp_postmeta',
-		array( 'post_id' => $article, 'meta_key' => 'wp-svbtle-kudos', 'meta_value' => $kudos),
-		array( '%d', '%s', '%d' )
-	);
-	echo $kudos;
-} else {
-	$kudos = ($kudos + 1);
-	$wpdb->update( 'wp_postmeta', 
-		array( 'meta_value' => $kudos), 
-		array( 'post_id' => $article, 'meta_key' => 'wp-svbtle-kudos'), 
-		array( '%d' ), 
-		array( '%d', '%s' ) 
-	);
-	echo $kudos;
-}
+$new_kudos = $kudos + 1;
 
+add_post_meta( $post_id, '_wp-svbtle-kudos', 1, true ) or update_post_meta( $post_id, '_wp-svbtle-kudos', $new_kudos );
+
+header('HTTP/1.1 200 OK');
 ?>
