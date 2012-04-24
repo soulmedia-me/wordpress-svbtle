@@ -34,7 +34,6 @@
   <h1 id="cover_user"><a href="/"><?php bloginfo( 'name' ); ?></a></h1>
 </section>
 
-
 <section id="sidebar" class="fixed">
   <figure id="user_logo">
     <a href="/">
